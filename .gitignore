@@ -1,0 +1,21 @@
+# local dev
+.DS_Store
+Thumbs.db
+node_modules/
+dist/
+build/
+
+# local databases / secrets (none used by this project)
+*.db
+*.sqlite
+.env
+.env.*
+*.pem
+*.key
+credentials*
+*secret*
+
+# editor
+.vscode/
+.idea/
+*~

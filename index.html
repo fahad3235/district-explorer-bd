@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>District Explorer BD &#8212; Bangladesh's 64 Districts</title>
+<meta name="description" content="Offline bilingual (EN/&#2476;&#2494;&#2434;&#2482;&#2494;) explorer of Bangladesh's 64 districts across 8 divisions.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">BD</div>
+      <div>
+        <h1 id="appTitle">District Explorer</h1>
+        <p id="appSubtitle">All 64 districts of Bangladesh, offline</p>
+      </div>
+    </div>
+    <button id="langBtn" class="langbtn" type="button">&#2476;&#2494;&#2434;&#2482;&#2494;</button>
+  </div>
+  <div class="stats" role="status">
+    <div class="stat"><span id="statDistricts">64 districts</span></div>
+    <div class="stat"><span id="statDivisions">8 divisions</span></div>
+    <div class="stat"><span id="statFavs">0 saved</span></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="controls">
+    <input id="searchInput" type="search" autocomplete="off" placeholder="Search district&#8230;">
+    <button id="surpriseBtn" class="btn primary" type="button">Surprise me</button>
+  </div>
+  <div id="chips" class="chips" role="tablist" aria-label="filters"></div>
+  <div id="grid" class="grid"></div>
+  <div id="clearBox" class="clearbox" hidden>
+    <label id="clearWarn" for="clearInput"></label>
+    <div class="clearrow">
+      <input id="clearInput" type="text" autocomplete="off" placeholder="DELETE">
+      <button id="clearBtn" class="btn danger" type="button">Clear favorites</button>
+    </div>
+    <span id="clearedMsg" class="cleared-msg"></span>
+  </div>
+</main>
+
+<footer class="foot">
+  <p id="footerText"></p>
+</footer>
+
+<div id="modalWrap" class="modal-wrap" hidden>
+  <div class="modal" role="dialog" aria-modal="true">
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
